@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socialbook: A Facebook Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-left">
+            <a href="index.html">
+            <img src="images\logo2.png" alt="Socialbook Logo" class="logo">
+        </a>
+            <ul>
+                <li><img src="images\notification.png"></li>
+                <li><img src="images\inbox.png"></li>
+                <li><img src="images\friends.png"></li>
+                <li><img src="images\profile-home.png"></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="search-box">
+                <input type="text" placeholder="Search Socialbook">
+                <img src="images\search.png" alt="Search Icon">
+            </div>
+            <div class="profile online" onclick="settingsMenuToggle()">
+                <img src="images\daemon.png">
+            </div>
+        </div>
+
+        <!-- ------------------settings menu------------------- -->
+        <div class="settings-menu">
+
+            <div id="dark-btn" class="dark-btn-on">
+                <span>
+
+                </span>
+            </div>
+
+
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="images\daemon.png" alt="Profile Picture">
+                    <div>
+                        <h3>Daemon Targaryen</h3>
+                        <a href="profile.html">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="images/feedback.png" alt="Profile Picture">
+                    <div>
+                        <h3>Give Feedback</h3>
+                        <a href="#">Help to improve</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="setting-links">
+                    <img src="images/setting.png" alt="Settings Icon" class="setting-icon">
+                    <a href="#">Settings & Privacy <img src="images\arrow.png" alt="Arrow Icon" width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="images\help.png" alt="Settings Icon" class="setting-icon">
+                    <a href="#">Help & Support <img src="images\arrow.png" alt="Arrow Icon" width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="images\display.png" alt="Settings Icon" class="setting-icon">
+                    <a href="#">Display & Accessibilty <img src="images\arrow.png" alt="Arrow Icon" width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="images/logout.png" alt="Settings Icon" class="setting-icon">
+                    <a href="#">LogOut <img src="images\arrow.png" alt="Arrow Icon" width="10px"></a>
+                </div>
+            </div>
+    </nav>
+
+    <div class="container">
+        <!----------------left side-bar------------------->
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="#"><img src="images\news.png">Home</a>
+                <a href="#"><img src="images\friends.png">Friends</a>
+                <a href="#"><img src="images\group.png">Groups</a>
+                <a href="#"><img src="images\marketplace.png">Marketplace</a>
+                <a href="#"><img src="images\watch.png">Watch</a>
+                <a href="#">See More</a>
+            </div>
+            <div class="user-profile">
+                <div class="shortcut-links">
+                    <p>Your Shortcuts</p>
+                    <a href="#"><img src="images/s1.jpg">Caraxes: The Blood Wyrm</a>
+                    <a href="#"><img src="images/s2.jpg">Princess of Dragonstone</a>
+                    <a href="#"><img src="images/s3.jpg">King of the Narrow Sea</a>
+                    <a href="#"><img src="images/s4.jpg">Queen of the Seven Kingdoms</a>
+                    <a href="#"><img src="images/s5.png">Dark Sister</a>
+
+                </div>
+            </div>
+        </div>
+        <!----------------main content------------------->
+        <div class="maincontent">
+            <div class="story-gallery">
+                <div class="story story1">
+                    <img src="images\upload.png" alt="Story">
+                    <p>Post Story</p>
+                </div>
+                <div class="story story2">
+                    <img src="images/member-1.jpg" alt="Story">
+                    <p>Post Story</p>
+                </div>
+                <div class="story story3">
+                    <img src="images/member-2.jpg" alt="Story">
+                    <p>Post Story</p>
+                </div>
+                <div class="story story4">
+                    <img src="images/member-3.jpg" alt="Story">
+                    <p>Post Story</p>
+                </div>
+                <div class="story story5">
+                    <img src="images/member-4.jpg" alt="Story">
+                    <p>Post Story</p>
+                </div>
+            </div>
+
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="images\daemon.png" alt="Profile Picture">
+                    <div>
+                        <h3>Daemon Targaryen</h3>
+                        <small>Public</small>
+                    </div>
+                </div>
+
+                <div class="post-input-container">
+                    <textarea rows="3" placeholder="What's on your mind ? Daemon"></textarea>
+                    <div class="add-post-link">
+                        <a href="#"><img src="images/live-video.png" alt="Add Photo">Live Video</a>
+                        <a href="#"><img src="images/photo.png" alt="Add Photo">Photo/Video</a>
+                        <a href="#"><img src="images/feeling.png" alt="Add Photo">Feeling/Activity</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="user-profile">
+                    <img src="images\daemon.png" alt="Profile Picture">
+                    <div>
+                        <h3>Daemon Targaryen</h3>
+                        <span>
+                            June 10 at 11:00 PM
+                        </span>
+                    </div>
+                </div>
+                <p class="post-text"> The blood of the dragon runs thick.
+                    <a href="#">#HouseoftheDragon</a>
+                    <a href="#">#DaemonTargaryen</a>
+                </p>
+                <img src="images/post-1.jpg" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png" alt="Like">120</div>
+                        <div><img src="images/comments.png" alt="Comment">20</div>
+                        <div><img src="images/share.png" alt="Share">10</div>
+                    </div>
+                    <div class="post-user-icon">
+                        <img src="images/member-1.jpg" alt="Profile Picture">
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="user-profile">
+                    <img src="images\daemon.png" alt="Profile Picture">
+                    <div>
+                        <h3>Daemon Targaryen</h3>
+                        <span>
+                            June 10 at 11:00 PM
+                        </span>
+                    </div>
+                </div>
+                <p class="post-text"> A marriage is a duty, yes. But that doesn’t stop us from doing what we want. From
+                    f***ing who we want.
+                    <a href="#">#HouseoftheDragon</a>
+                    <a href="#">#DaemonTargaryen</a>
+                </p>
+                <img src="images/post-2.jpg" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png" alt="Like">120</div>
+                        <div><img src="images/comments.png" alt="Comment">20</div>
+                        <div><img src="images/share.png" alt="Share">10</div>
+                    </div>
+                    <div class="post-user-icon">
+                        <img src="images/member-2.jpg" alt="Profile Picture">
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="user-profile">
+                    <img src="images\daemon.png" alt="Profile Picture">
+                    <div>
+                        <h3>Daemon Targaryen</h3>
+                        <span>
+                            June 10 at 11:00 PM
+                        </span>
+                    </div>
+                </div>
+                <p class="post-text"> "I Want Rhaenyra. I'll Take Her As She Is."
+                    Even When He's In The Wrong, He's Still A Romantic?
+                    <a href="#">#HouseoftheDragon</a>
+                    <a href="#">#DaemonTargaryen</a>
+                    <a href="#">#rhaenyraTargaryen</a>
+                    <a href="#">#MillyAlcock</a>
+                </p>
+                <img src="images/post-3.jpg" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png" alt="Like">120</div>
+                        <div><img src="images/comments.png" alt="Comment">20</div>
+                        <div><img src="images/share.png" alt="Share">10</div>
+                    </div>
+                    <div class="post-user-icon">
+                        <img src="images/member-3.jpg" alt="Profile Picture">
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="user-profile">
+                    <img src="images\daemon.png" alt="Profile Picture">
+                    <div>
+                        <h3>Daemon Targaryen</h3>
+                        <span>
+                            June 10 at 11:00 PM
+                        </span>
+                    </div>
+                </div>
+                <p class="post-text"> “It is with pleasure that I, Daemon Targaryen, Prince of Dragonstone and rightful
+                    heir from the Iron Throne, inform you that I am about to have a second wife, as in the days of
+                    ancient Valyria.”
+                    <a href="#">#HouseoftheDragon</a>
+                    <a href="#">#DaemonTargaryen</a>
+                </p>
+                <img src="images/post-4.jpg" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png" alt="Like">120</div>
+                        <div><img src="images/comments.png" alt="Comment">20</div>
+                        <div><img src="images/share.png" alt="Share">10</div>
+                    </div>
+                    <div class="post-user-icon">
+                        <img src="images/member-4.jpg" alt="Profile Picture">
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="user-profile">
+                    <img src="images\daemon.png" alt="Profile Picture">
+                    <div>
+                        <h3>Daemon Targaryen</h3>
+                        <span>
+                            June 10 at 11:00 PM
+                        </span>
+                    </div>
+                </div>
+                <p class="post-text">Swear anew your oath to Rhaenyra as your queen, to Prince Jacaerys as the heir to
+                    the Iron Throne. Or, if you support the usurper, speak it now, and you will have a clean and
+                    honorable death. But if you choose treachery, if you swear fealty now only to later turn your
+                    cloaks, know that you will die… screaming.
+                    <a href="#">#HouseoftheDragon</a>
+                    <a href="#">#DaemonTargaryen</a>
+                </p>
+                <img src="images/post-5.jpg" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png" alt="Like">120</div>
+                        <div><img src="images/comments.png" alt="Comment">20</div>
+                        <div><img src="images/share.png" alt="Share">10</div>
+                    </div>
+                    <div class="post-user-icon">
+                        <img src="images/member-5.jpg" alt="Profile Picture">
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" class="load-more">Load More
+
+            </button>
+
+        </div>
+        <!----------------right side-bar------------------->
+        <div class="right-sidebar">
+            <div class="side-bar-title">
+                <h3>Events</h3>
+                <a href="#">See All</a>
+            </div>
+
+            <div class="event">
+                <div class="leftevent">
+                    <h3>18</h3>
+                    <span>Aug</span>
+                </div>
+                <div class="rightevent">
+                    <h3>House of Dragons Season 2</h3>
+                    <p>A Son for a Son</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="leftevent">
+                    <h3>20</h3>
+                    <span>Aug</span>
+                </div>
+                <div class="rightevent">
+                    <h3>Blood and Cheese</h3>
+                    <p>Episode 1</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="side-bar-title">
+                <h3>Advertisement</h3>
+                <a href="#">Close</a>
+            </div>
+            <img src="images\advertisement.png" alt="Advertisement" class="side-bar-ad" height="300">
+            <div class="side-bar-title">
+                <h3>Conversation</h3>
+                <a href="#">Hide Chat</a>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="images\member-1.jpg">
+                </div>
+                <p>Brother</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images\member-2.jpg">
+                </div>
+                <h4>Your Grace</h4>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images\member-3.jpg">
+                </div>
+                <p>Rhaenys</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images\member-4.jpg">
+                </div>
+                <p>Seasnake</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images\member-5.jpg">
+                </div>
+                <p>Rhaena</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images\member-6.jpg">
+                </div>
+                <h4>Baela</h4>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images\member-7.jpg">
+                </div>
+                <p>Family of Dragonstone</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="footer">Copyright © Ted Nasmith and are used with permission.</div>
+    <script src="script.js"></script>
+</body>
+
+</html>
