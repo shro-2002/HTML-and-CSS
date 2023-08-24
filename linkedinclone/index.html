@@ -29,13 +29,13 @@
                 </li>
             </ul>
         </div>
-        <div class="nav-right">
+        <div class="nav-right" >
             <div class="online">
-                <img src="images/user-1.jpg" alt="User" class="nav-profile-img">
+                <img src="images/user-1.jpg" alt="User" class="nav-profile-img" onclick="ToggleMenu()">
             </div>
         </div>
 <!-- -----------------------------------------------profile-drop-down---------------------------------------------- -->
-        <div class="profile-menu-wrap">
+        <div class="profile-menu-wrap" id="profileMenu">
             <div class="profile-menu">
                 <div class="user-info">
                     <img src="images/user-1.jpg" alt="User">
@@ -44,8 +44,34 @@
                         <a href="#">See your profile</a>
                     </div>
                 </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/feedback.png" alt="Profile">
+                    <p>Give Feedback</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/setting.png" alt="Profile">
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/help.png" alt="Profile">
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/display.png" alt="Profile">
+                    <p>Display & Accessibility</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/logout.png" alt="Profile">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
             </div>
-        </div>
+        </div> 
         
 
 
@@ -353,6 +379,7 @@
         <!-- ------------------------------right-sidebar end---------------------- -->
 
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

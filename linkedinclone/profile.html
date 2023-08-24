@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linked In: Clone </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="index.html" class="logo"><img src="images/logo.png" alt="Linkedin Logo"></a>
+
+            <div class="search-box">
+                <img src="images/search.png" alt="Search">
+                <input type="text" placeholder="Search">
+
+            </div>
+        </div>
+        <div class="nav-center">
+            <ul>
+                <li><a href="#" class="active-link"><img src="images/home.png" alt="Home"><span>Home</span></a></li>
+                <li><a href="#"><img src="images/network.png" alt="My Network"><span>My Network</span></a></li>
+                <li><a href="#"><img src="images/jobs.png" alt="Jobs"><span>Jobs</span></a></li>
+                <li><a href="#"><img src="images/message.png" alt="Messaging"><span>Messaging</span></a></li>
+                <li><a href="#"><img src="images/notification.png" alt="Notifications"><span>Notifications</span></a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="online">
+                <img src="images/user-1.jpg" alt="User" class="nav-profile-img" onclick="ToggleMenu()">
+            </div>
+        </div>
+        <!-- -----------------------------------------------profile-drop-down---------------------------------------------- -->
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="images/user-1.jpg" alt="User">
+                    <div>
+                        <h1>Rhaenyra Targaryen</h1>
+                        <a href="#">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/feedback.png" alt="Profile">
+                    <p>Give Feedback</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/setting.png" alt="Profile">
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/help.png" alt="Profile">
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/display.png" alt="Profile">
+                    <p>Display & Accessibility</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/logout.png" alt="Profile">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- ---------------------nava bar end-------------------- -->
+
+    <div class="container">
+        <div class="profile-main">
+            <div class="profile-container">
+                <img src="images/cover-pic.jpg" width="100%">
+                <div class="profile-container-inner">
+                    <img src="images/user-1.jpg" alt="User" class="profile-img">
+                    <h1>Rhaenyra Targaryen</h1>
+                    <b>
+                        Rhaenyra of House Targaryen, the First of Her Name|
+                        Princess of Dragonstone|
+                        Queen of the Andals, the Rhoynar, and the First Men|The Realm's Delight
+                    </b>
+                    <p>
+                        Crownlands, Westeros &middot; <a href="#">Contact info</a>
+                    </p>
+                    <div class="mutual-connections">
+                        <img src="images/user-2.jpg" alt="">
+                        <span>1 mutual connection: Daemon Targaryen</span>
+                    </div>
+                    <div class="profile-buttons">
+                        <a href="#" class="primary-btn"><img src="images/connect.png">Connect</a>
+                        <a href="#"><img src="images/message.png" alt="">Message</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-description">
+                <h2>About</h2>
+                <p>I am Rhaenyra Targaryen, a woman of fire and blood, born of dragon heritage and destined to claim
+                    what is rightfully mine. With the strength of my ancestors coursing through my veins, I stand as a
+                    fierce and unyielding contender for the Iron Throne. My passion burns as brightly as my dragons'
+                    flames, driving me to challenge tradition and seize power that has been denied to me for too long. I
+                    am the embodiment of the legacy that courses through the Targaryen line, and I will stop at nothing
+                    to secure my place as the ruler of the Seven Kingdoms.</p>
+                <a href="#" class="see-more-link">See more....</a>
+            </div>
+
+            <div class="profile-description">
+                <h2>Experience</h2>
+                <div class="profile-desc">
+                    <img src="images/dragon.png" alt="">
+                    <div>
+                        <h3> Dragonrider and Heir Apparent</h3>
+                        <b>House Targaryen | King's Landing</b>
+                        <b> 105 AC-129 AC &middot; 24 years</b>
+                        <p>Commanding and nurturing a bond with dragons, embodying the legacy of House Targaryen.
+                            Strategizing and training alongside loyal supporters for the rightful claim to the Iron
+                            Throne.
+                            Overcoming challenges and adversity to assert my position as the true heir to the throne.
+                        </p>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="profile-desc">
+                    <img src="images/fire.png" alt="">
+                    <div>
+                        <h3> Defender of My Birthright</h3>
+                        <b>Fall of King's Landing| Sack of Duskendale</b>
+                        <b> 129 AC-131 AC &middot; 2 years</b>
+                        <p>Led forces against adversaries who sought to challenge my rightful claim, demonstrating
+                            tactical prowess and resilience.
+                            Forged alliances and inspired loyalty among supporters who recognize my entitlement to the
+                            throne.</p>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="profile-desc">
+                    <img src="images/Rhaenyra_Targaryen.svg" alt="">
+                    <div>
+                        <h3> Protector of the Realm</h3>
+                        <b>Dragonstone | Regency Period</b>
+                        <b> 129 AC-131 AC &middot; 2 years</b>
+                        <p>Successfully governed the realm during periods of my father's absence, ensuring stability and
+                            just rule.
+                            Leveraged my lineage and dragon companions to maintain a strong presence and deter potential
+                            challengers.
+                        </p>
+                        <hr>
+                    </div>
+                </div>
+                <a href="#" class="Experience-link">Show all 7 Experiences <img src="images/right-arrow.png" alt=""></a>
+            </div>
+
+            <div class="profile-description">
+                <h2>Education</h2>
+                <div class="profile-desc">
+                    <img src="images/Star_of_the_Faith.svg" alt="">
+                    <div>
+                        <h3>Faith of the Seven</h3>
+                        <b> History and Strategy</b>
+                        <b>101 AC-110 AC</b>
+                        <p>Trained in the history and traditions of Westeros, the laws of the land, and the art of war
+                            by the finest Septas in the realm.</p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="profile-desc">
+                    <img src="images/syrax.jpg" alt="">
+                    <div>
+                        <h3>Dragon Riding</h3>
+                        <b>Mounting of Syrax, The Spoiled Queen </b>
+                        <b>101 AC-110 AC</b>
+                        <p>Trained in dragonriding and the use of magic by her half-uncle, Daemon Targaryen.</p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="profile-desc">
+                    <img src="images/redkeep.jpg" alt="">
+                    <div>
+                        <h3>Red Keep</h3>
+                        <b>High valyrian </b>
+                        <b>101 AC-110 AC</b>
+                        <p>High Valyrian was the language of the Targaryens, and it was considered to be a sign of nobility and education to speak it</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-description">
+                <h2>Skills</h2>
+                <a href="#" class="skill-btn">Dragonriding and Dragon Command</a>
+                <a href="#" class="skill-btn">Strategic Planning</a>
+                <a href="#" class="skill-btn">Leadership</a>
+                <a href="#" class="skill-btn">Diplomacy</a>
+                <a href="#" class="skill-btn">Fire Resistance</a>
+                <a href="#" class="skill-btn">High Valyrian</a>
+                <a href="#" class="skill-btn">Governance and Statecraft</a>
+                <a href="#" class="skill-btn">Mastery of Targaryen History</a>
+            </div>
+
+
+
+
+        </div>
+
+        <!-- -----------------------------profile-sidebar-------------------------------- -->
+        <div class="profile-sidebar"></div>
+
+
+        <script src="script.js"></script>
+</body>
+
+</html>

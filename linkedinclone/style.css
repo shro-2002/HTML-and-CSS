@@ -96,8 +96,6 @@ a{
     margin-right: 5px;
 }
 
-
-
 .nav-center ul li a img{
     width: 30px;
 }
@@ -125,6 +123,13 @@ position: relative;
     top: 100%;
     right: 5%;
     width: 300px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.profile-menu-wrap.active-menu{
+    max-height: 500px;
 }
 
 .profile-menu{
@@ -134,7 +139,56 @@ position: relative;
     margin: 10px;
 }
 
-.user-info
+.user-info{
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-bottom: 1px solid #333;
+}
+
+.user-info img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+   
+    margin-right: 10px;
+}
+
+.user-info h1{
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.user-info a{
+    color: #c9dbf8;
+    font-size: 14px;
+}
+
+.profile-menu-link{
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-bottom: 1px solid #333;
+    font-size: 14px;
+    cursor: pointer;
+}
+.profile-menu-link img{
+    width: 35px;
+    margin-right: 10px;
+}
+
+.profile-menu-link p{
+    font-size: 14px;
+    color: #fff;
+}
+
+.profile-menu-link span{
+    font-size: 14px;
+    color: #c9dbf8;
+    margin-left: auto;
+    float: right;
+}
 
 /* --------------------nav-bar end-------------------- */
 
@@ -586,3 +640,169 @@ position: relative;
     margin-right: 3px;
 }
 
+/* ----------------------------profile-page------------------------ */
+
+.profile-main{
+    flex-basis: 73%;
+}
+
+.profile-sidebar{
+    flex-basis: 25%;
+    align-self: flex-start;
+    position: sticky;
+    top: 70px;
+}
+
+.profile-container{
+    background: #fff;
+}
+
+.profile-container-inner{
+    padding: 0 4% 10px;
+}
+
+.profile-img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: -75px;
+    padding: 5px;
+    background: #fff;
+}
+
+.profile-container-inner h1{
+    font-size: 30px;
+    font-weight: 600;
+    color: #222;
+
+}
+.profile-container-inner b{
+    font-weight: 500;
+    color: #222;
+    margin-top: 20px
+}
+
+.profile-container-inner p{
+    font-size: 15px;
+    color: #888;
+    margin-top: 5px;
+}
+
+.profile-container-inner p a{
+    color: #045be6;
+    font-weight: 500;
+}
+
+.mutual-connections{
+    display: flex;
+    align-items: center;
+    margin-top: 20px 0 ;
+}
+
+.mutual-connections img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.profile-buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.profile-buttons a{
+    display: inline-flex;
+    align-items: center;
+    background: #e4e6eb;
+    padding: 6px 15px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.profile-buttons a img{
+    width: 20px;
+    margin-right: 5px;
+}
+.profile-buttons .primary-btn{
+    background: #045be6;
+    color: #fff;
+}
+
+.profile-description{
+    background: #fff;
+    padding: 20px 4% 30px;
+    margin: 12px 0;
+}
+
+.profile-description h2{
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    margin: 10px 0 20px;
+}
+
+.see-more-link{
+    display: block;
+    text-align: right;
+    font-size: 15px;
+}
+
+.profile-desc{
+    display: flex;
+    align-items: flex-start;
+    margin: 20px 0;
+}
+
+.profile-desc img{
+    width: 50px;
+    margin-right: 10px;
+}
+
+.profile-desc p{
+    font-size: 15px;
+    color: #333;
+    margin-top: 15px;
+    line-height: 1.5;
+}
+.profile-desc h3{
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+.profile-desc b{
+    font-weight: 600;
+    color: hwb(0 51% 47%);
+    display: block;
+    font-size: 15px;
+}
+.profile-desc hr{
+    border:0;
+    border-bottom: 1px solid #999;
+    margin: 20px 0;
+}
+
+.Experience-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    font-weight: 500;
+}
+
+.Experience-link img{
+    width: 20px;
+    margin-left: 5px;
+}
+
+.skill-btn{
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #777;
+    border-radius:30px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #777;
+}
