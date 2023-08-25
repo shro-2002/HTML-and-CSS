@@ -9,7 +9,6 @@ This repository contains the code for a LinkedIn clone built using HTML and CSS.
 
 ## Table of Contents
 - [Description](#description)
-- [Features](#features)
 - [Screenshots](#screenshots)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -19,14 +18,6 @@ This repository contains the code for a LinkedIn clone built using HTML and CSS.
 ## Description
 
 This project is a LinkedIn clone that demonstrates the use of HTML and CSS to recreate the look and feel of the LinkedIn social media platform. It serves as a learning exercise in web development and front-end design.
-
-## Features
-
-- User authentication and registration
-- User profiles with professional information
-- News feed with posts and updates
-- Like and comment functionality
-- Basic responsive design for different screen sizes
 
 
 ## Screenshots
